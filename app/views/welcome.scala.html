@@ -1,0 +1,74 @@
+@(message: String, style: String = "scala") 
+
+@defining(play.core.PlayVersion.current) { version =>
+
+<section id="top">
+  <div class="wrapper">
+    <h1><a href="https://playframework.com/documentation/@version/Home">@message</a></h1>
+  </div>
+</section>
+
+<div id="content" class="wrapper doc">
+<article>
+
+  <h1>Welcome to Play</h1>
+
+
+
+    <p>
+        <a href="@routes.FactorialController.fact">Click here for the CountController action!</a>
+    </p>
+
+    <p>
+        You can read more about <a href="https://www.playframework.com/documentation/@version/ScalaDependencyInjection">dependency injection</a> in the documentation.
+    </p>
+
+    <h2>Need more info on the console?</h2>
+
+  <p>
+    For more information on the various commands you can run on Play, i.e. running tests and packaging applications for production, see <a href="https://playframework.com/documentation/@version/PlayConsole">Using the Play console</a>.
+  </p>  
+
+  <h2>Need to set up an IDE?</h2>
+
+  <p>
+      You can start hacking your application right now using any text editor. Any changes will be automatically reloaded at each page refresh, 
+      including modifications made to Scala source files.
+  </p>
+
+  <p>
+      If you want to set-up your application in <strong>IntelliJ IDEA</strong> or any other Java IDE, check the 
+      <a href="https://www.playframework.com/documentation/@version/IDE">Setting up your preferred IDE</a> page.
+  </p>
+
+  <h2>Need more documentation?</h2>
+
+  <p>
+    Play documentation is available at <a href="https://www.playframework.com/documentation/@version">https://www.playframework.com/documentation</a>.
+  </p>
+
+  <p>
+    Play comes with lots of example templates showcasing various bits of Play functionality at <a href="https://www.playframework.com/download#examples">https://www.playframework.com/download#examples</a>.
+  </p>
+
+  <h2>Need more help?</h2>
+
+  <p>
+    Play questions are asked and answered on Stackoverflow using the "playframework" tag: <a href="https://stackoverflow.com/questions/tagged/playframework">https://stackoverflow.com/questions/tagged/playframework</a>
+  </p>
+
+  <p>
+    The <a href="http://groups.google.com/group/play-framework">Play Google Group</a> is where Play users come to seek help,
+    announce projects, and discuss issues and new features. If you don’t have a Google account, you can still join the mailing
+    list by sending an e-mail to
+    <strong>play-framework+subscribe@@googlegroups.com</strong>.
+  </p>
+
+  <p>
+    Gitter is a real time chat channel, like IRC. The <a href="https://gitter.im/playframework/playframework">playframework/playframework</a>  channel is used by Play users to discuss the ins and outs of writing great Play applications.
+  </p>
+ 
+</article>
+
+</div>
+}
